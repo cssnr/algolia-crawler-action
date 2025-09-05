@@ -41,6 +41,8 @@ An alternative to this action is to use a simple [web-request-action](https://gi
 
 Make sure to review the [Inputs](#inputs) and checkout more [Examples](#examples).
 
+This is an extremely simple action, for more details see [src/index.js](src/index.js).
+
 > [!NOTE]  
 > Please submit a [Feature Request](https://github.com/cssnr/algolia-crawler-action/discussions/categories/feature-requests)
 > for new features or [Open an Issue](https://github.com/cssnr/algolia-crawler-action/issues) if you find any bugs.
