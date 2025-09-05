@@ -37015,16 +37015,16 @@ const axios = __nccwpck_require__(7269)
         // Inputs
         const crawlerId = core.getInput('crawler_id', { required: true })
         console.log('crawlerId:', crawlerId)
-        const crawlerUserIid = core.getInput('crawler_user_id', { required: true })
-        console.log('crawlerUserIid:', crawlerUserIid)
+        const crawlerUserId = core.getInput('crawler_user_id', { required: true })
+        console.log('crawlerUserId:', crawlerUserId)
         const crawlerApiKey = core.getInput('crawler_api_key', { required: true })
         console.log('crawlerApiKey:', crawlerApiKey)
 
         // Options
         const url = `https://crawler.algolia.com/api/1/crawlers/${crawlerId}/reindex`
-        console.log('url:', url)
-        const auth = { crawlerUserIid, crawlerApiKey }
-        console.log('auth:', auth)
+        // console.log('url:', url)
+        const auth = { username: crawlerUserId, password: crawlerApiKey }
+        // console.log('auth:', auth)
 
         // Request
         const config = { url, method: 'POST', auth }
