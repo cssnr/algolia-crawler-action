@@ -1,0 +1,49 @@
+name: "Test"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "18 18 * * 1,3,5"
+  push:
+    branches: [master]
+    paths:
+      - "dist/**"
+      - "src/**"
+      - ".github/workflows/test.yaml"
+      - "package*.json"
+      - "requirements*.txt"
+      - "action.yml"
+  pull_request:
+
+jobs:
+  test:
+    name: "Test"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v5
+
+      - name: "Test Local Action"
+        id: test
+        uses: ./
+        with:
+          crawler_id: ${{ secrets.CRAWLER_ID }}
+          crawler_user_id: ${{ secrets.CRAWLER_USER_ID }}
+          crawler_api_key: ${{ secrets.CRAWLER_API_KEY }}
+
+      - name: "Verify Outputs"
+        run: |
+          echo '${{ steps.test.outputs.status }}'
+          echo '${{ steps.test.outputs.task_id }}'
+          if [ -z '${{ steps.test.outputs.task_id }}' ];then
+            echo "Output Invalid"
+            exit 1
+          fi
+
+      - name: "Schedule Failure Notification"
+        if: ${{ failure() && github.event_name == 'schedule' }}
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}

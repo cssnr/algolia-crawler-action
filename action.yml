@@ -1,0 +1,27 @@
+name: "Algolia Crawler"
+description: "Run the Algolia Crawler after Deployments."
+author: "Shane"
+branding:
+  icon: "play-circle"
+  color: "blue"
+
+inputs:
+  crawler_id:
+    description: "Crawler ID"
+    required: true
+  crawler_user_id:
+    description: "Request Method"
+    required: true
+  crawler_api_key:
+    description: "Request Data JSON"
+    required: true
+
+outputs:
+  status:
+    description: "Response Status"
+  task_id:
+    description: "Task ID"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"

@@ -1,0 +1,21 @@
+{
+  "name": "algolia-crawler-action",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js",
+    "build:watch": "npm run build -- --watch",
+    "lint": "npx eslint src",
+    "prettier": "npx prettier --write .",
+    "prettier:check": "npx prettier --check ."
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@eslint/js": "^9.34.0",
+    "axios": "^1.11.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2"
+  }
+}
