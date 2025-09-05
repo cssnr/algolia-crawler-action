@@ -1,5 +1,5 @@
 name: "Algolia Crawler"
-description: "Run the Algolia Crawler after Deployments."
+description: "Run the Algolia Crawler for All Accounts with Only the Crawler Credentials."
 author: "Shane"
 branding:
   icon: "play-circle"

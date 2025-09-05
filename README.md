@@ -22,7 +22,7 @@
 - [Contributing](#Contributing)
 
 Easily run the Algolia Crawler after a deployment. Works for free accounts including DocSearch.
-Only requires your Crawler ID, Crawler User ID, and Crawler API Key.
+Only requires your Crawler Credentials; Crawler ID, Crawler User ID, and Crawler API Key.
 
 This uses the Algolia API to [Start a crawl](https://www.algolia.com/doc/rest-api/crawler/#tag/actions/operation/startReindex).
 
@@ -36,6 +36,8 @@ An alternative to this action is to use a simple [web-request-action](https://gi
     crawler_user_id: ${{ secrets.CRAWLER_USER_ID }}
     crawler_api_key: ${{ secrets.CRAWLER_API_KEY }}
 ```
+
+Make sure to review the [Inputs](#inputs) and checkout more [Examples](#examples).
 
 > [!NOTE]  
 > Please submit a [Feature Request](https://github.com/cssnr/algolia-crawler-action/discussions/categories/feature-requests)
