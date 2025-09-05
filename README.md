@@ -1,10 +1,12 @@
 [![GitHub Tag Major](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!v*.*&logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/tags)
 [![GitHub Tag Minor](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!v*.*.*&logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/tags)
 [![GitHub Release Version](https://img.shields.io/github/v/release/cssnr/algolia-crawler-action?logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/releases/latest)
-[![Release](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/release.yaml?logo=github&label=release)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/release.yaml)
-[![Lint](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/lint.yaml?logo=cachet&label=lint)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/lint.yaml)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/algolia-crawler-action?logo=github&label=updated)](https://github.com/cssnr/algolia-crawler-action/graphs/commit-activity)
+[![GitHub Dist Size](https://img.shields.io/github/size/cssnr/algolia-crawler-action/dist%2Findex.js?label=dist%20size)](https://github.com/cssnr/algolia-crawler-action/blob/master/src/index.js)
+[![Workflow Release](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/release.yaml?logo=cachet&label=release)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/release.yaml)
+[![Workflow Lint](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/lint.yaml?logo=cachet&label=lint)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/lint.yaml)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/algolia-crawler-action?logo=github&label=updated)](https://github.com/cssnr/algolia-crawler-action/pulse)
 [![Codeberg Last Commit](https://img.shields.io/gitea/last-commit/cssnr/algolia-crawler-action/master?gitea_url=https%3A%2F%2Fcodeberg.org%2F&logo=codeberg&logoColor=white&label=updated)](https://codeberg.org/cssnr/algolia-crawler-action)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/cssnr/algolia-crawler-action?logo=bookstack&logoColor=white&label=repo%20size)](https://github.com/cssnr/algolia-crawler-action)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/cssnr/algolia-crawler-action?logo=htmx)](https://github.com/cssnr/algolia-crawler-action)
 [![GitHub Forks](https://img.shields.io/github/forks/cssnr/algolia-crawler-action?style=flat&logo=github)](https://github.com/cssnr/algolia-crawler-action/forks)
 [![GitHub Repo Stars](https://img.shields.io/github/stars/cssnr/algolia-crawler-action?style=flat&logo=github)](https://github.com/cssnr/algolia-crawler-action/stargazers)
@@ -22,7 +24,7 @@
 - [Contributing](#Contributing)
 
 Easily run the Algolia Crawler after a deployment. Works for free accounts including DocSearch.
-Only requires your Crawler ID, Crawler User ID, and Crawler API Key.
+Only requires your Crawler Credentials; Crawler ID, Crawler User ID, and Crawler API Key.
 
 This uses the Algolia API to [Start a crawl](https://www.algolia.com/doc/rest-api/crawler/#tag/actions/operation/startReindex).
 
@@ -36,6 +38,10 @@ An alternative to this action is to use a simple [web-request-action](https://gi
     crawler_user_id: ${{ secrets.CRAWLER_USER_ID }}
     crawler_api_key: ${{ secrets.CRAWLER_API_KEY }}
 ```
+
+Make sure to review the [Inputs](#inputs) and checkout more [Examples](#examples).
+
+This is an extremely simple action, for more details see [src/index.js](src/index.js).
 
 > [!NOTE]  
 > Please submit a [Feature Request](https://github.com/cssnr/algolia-crawler-action/discussions/categories/feature-requests)
