@@ -6,7 +6,6 @@
 [![Workflow Lint](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/lint.yaml?logo=cachet&label=lint)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/lint.yaml)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/algolia-crawler-action?logo=github&label=updated)](https://github.com/cssnr/algolia-crawler-action/pulse)
 [![Codeberg Last Commit](https://img.shields.io/gitea/last-commit/cssnr/algolia-crawler-action/master?gitea_url=https%3A%2F%2Fcodeberg.org%2F&logo=codeberg&logoColor=white&label=updated)](https://codeberg.org/cssnr/algolia-crawler-action)
-[![GitHub Contributors](https://img.shields.io/github/contributors/cssnr/algolia-crawler-action?logo=github)](https://github.com/cssnr/algolia-crawler-action/graphs/contributors)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/cssnr/algolia-crawler-action?logo=bookstack&logoColor=white&label=repo%20size)](https://github.com/cssnr/algolia-crawler-action)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/cssnr/algolia-crawler-action?logo=htmx)](https://github.com/cssnr/algolia-crawler-action)
 [![GitHub Forks](https://img.shields.io/github/forks/cssnr/algolia-crawler-action?style=flat&logo=github)](https://github.com/cssnr/algolia-crawler-action/forks)
