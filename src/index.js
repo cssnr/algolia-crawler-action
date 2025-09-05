@@ -13,9 +13,9 @@ const axios = require('axios')
 
         // Options
         const url = `https://crawler.algolia.com/api/1/crawlers/${crawlerId}/reindex`
-        console.log('url:', url)
+        // console.log('url:', url)
         const auth = { username: crawlerUserId, password: crawlerApiKey }
-        console.log('auth:', auth)
+        // console.log('auth:', auth)
 
         // Request
         const config = { url, method: 'POST', auth }
