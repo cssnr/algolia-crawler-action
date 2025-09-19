@@ -28,8 +28,6 @@ Only requires your Crawler Credentials; Crawler ID, Crawler User ID, and Crawler
 
 This uses the Algolia API to [Start a crawl](https://www.algolia.com/doc/rest-api/crawler/#tag/actions/operation/startReindex).
 
-An alternative to this action is to use a simple [web-request-action](https://github.com/cssnr/web-request-action?tab=readme-ov-file#examples).
-
 ```yaml
 - name: 'Algolia Crawler'
   uses: cssnr/algolia-crawler-action@v1
@@ -42,6 +40,8 @@ An alternative to this action is to use a simple [web-request-action](https://gi
 Make sure to review the [Inputs](#inputs) and checkout more [Examples](#examples).
 
 This is an extremely simple action, for more details see [src/index.js](src/index.js).
+
+An alternative to this action is to use a simple [web-request-action](https://github.com/cssnr/web-request-action?tab=readme-ov-file#examples).
 
 > [!NOTE]  
 > Please submit a [Feature Request](https://github.com/cssnr/algolia-crawler-action/discussions/categories/feature-requests)
