@@ -1,8 +1,8 @@
 {
-  "printWidth": 90,
   "trailingComma": "es5",
   "semi": false,
   "singleQuote": true,
+  "printWidth": 90,
   "overrides": [
     {
       "files": ["**/*.html", "**/*.yaml", "**/*.yml"],
@@ -11,7 +11,7 @@
       }
     },
     {
-      "files": ["**/*.js", "**/*.css", "**/*.scss"],
+      "files": ["**/*.js", "**/*.mjs", "**/*.css", "**/*.scss"],
       "options": {
         "tabWidth": 4
       }
