@@ -4,6 +4,7 @@
 [![GitHub Dist Size](https://img.shields.io/github/size/cssnr/algolia-crawler-action/dist%2Findex.js?logo=bookstack&logoColor=white&label=dist%20size)](https://github.com/cssnr/algolia-crawler-action/blob/master/src)
 [![Workflow Release](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/release.yaml?logo=cachet&label=release)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/release.yaml)
 [![Workflow Lint](https://img.shields.io/github/actions/workflow/status/cssnr/algolia-crawler-action/lint.yaml?logo=cachet&label=lint)](https://github.com/cssnr/algolia-crawler-action/actions/workflows/lint.yaml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cssnr_algolia-crawler-action&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=cssnr_algolia-crawler-action)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/cssnr/algolia-crawler-action?logo=github&label=updated)](https://github.com/cssnr/algolia-crawler-action/pulse)
 [![Codeberg Last Commit](https://img.shields.io/gitea/last-commit/cssnr/algolia-crawler-action/master?gitea_url=https%3A%2F%2Fcodeberg.org%2F&logo=codeberg&logoColor=white&label=updated)](https://codeberg.org/cssnr/algolia-crawler-action)
 [![GitHub Repo Size](https://img.shields.io/github/repo-size/cssnr/algolia-crawler-action?logo=bookstack&logoColor=white&label=repo%20size)](https://github.com/cssnr/algolia-crawler-action?tab=readme-ov-file#readme)
