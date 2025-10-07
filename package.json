@@ -1,5 +1,6 @@
 {
   "name": "algolia-crawler-action",
+  "private": true,
   "main": "dist/index.js",
   "scripts": {
     "build": "ncc build src/index.js",
@@ -14,9 +15,9 @@
     "axios": "^1.12.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
+    "@eslint/js": "^9.37.0",
     "@vercel/ncc": "^0.38.4",
-    "eslint": "^9.36.0",
+    "eslint": "^9.37.0",
     "prettier": "^3.6.2"
   }
 }
