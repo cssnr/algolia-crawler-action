@@ -34,7 +34,7 @@ This uses the Algolia API to [Start a crawl](https://www.algolia.com/doc/rest-ap
 
 ```yaml
 - name: 'Algolia Crawler'
-  uses: cssnr/algolia-crawler-action@v1
+  uses: cssnr/algolia-crawler-action@v2
   with:
     crawler_id: ${{ secrets.CRAWLER_ID }}
     crawler_user_id: ${{ secrets.CRAWLER_USER_ID }}
@@ -82,7 +82,7 @@ These are usually the same across your account if you have multiple crawlers. Th
 
 ```yaml
 - name: 'Algolia Crawler'
-  uses: cssnr/algolia-crawler-action@v1
+  uses: cssnr/algolia-crawler-action@v2
   id: crawler
   with:
     crawler_id: ${{ secrets.CRAWLER_ID }}
@@ -183,7 +183,7 @@ jobs:
 
     steps:
       - name: 'Algolia Crawler'
-        uses: cssnr/algolia-crawler-action@v1
+        uses: cssnr/algolia-crawler-action@v2
         with:
           crawler_id: ${{ secrets.CRAWLER_ID }}
           crawler_user_id: ${{ secrets.CRAWLER_USER_ID }}

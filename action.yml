@@ -1,5 +1,5 @@
 name: "Algolia Crawler"
-description: "Run the Algolia Crawler for All Accounts with Only the Crawler Credentials."
+description: "Start an Algolia Crawler Run. Works for Free All Accounts including DocSearch. Only requires the Crawler Credentials."
 author: "Shane"
 branding:
   icon: "play-circle"
@@ -10,10 +10,10 @@ inputs:
     description: "Crawler ID"
     required: true
   crawler_user_id:
-    description: "Request Method"
+    description: "Crawler User Id"
     required: true
   crawler_api_key:
-    description: "Request Data JSON"
+    description: "Crawler API Key"
     required: true
 
 outputs:
