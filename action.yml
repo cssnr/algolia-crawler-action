@@ -20,7 +20,7 @@ outputs:
   status:
     description: "Response Status"
   task_id:
-    description: "Task ID"
+    description: "Algolia Crawler Task ID"
 
 runs:
   using: "node24"

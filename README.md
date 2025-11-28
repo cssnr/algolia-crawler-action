@@ -78,10 +78,10 @@ These are usually the same across your account if you have multiple crawlers. Th
 
 ## Outputs
 
-| Output  | Description               |
-| :------ | :------------------------ |
-| status  | API Response Status Code  |
-| task_id | Resulting Crawler Task ID |
+| Output  | Description              |
+| :------ | :----------------------- |
+| status  | API Response Status Code |
+| task_id | Algolia Crawler Task ID  |
 
 ```yaml
 - name: 'Algolia Crawler'
