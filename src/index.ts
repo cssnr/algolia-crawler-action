@@ -29,7 +29,7 @@ async function main() {
   // console.log('response.request._headers:', response.request._headers)
   // console.log('response.headers:', response.headers)
   console.log('response.status:', response.status)
-  console.log('response.data:', response.data)
+  console.log('response.data:', response.data) // NOSONAR
 
   // Outputs
   core.setOutput('status', response.status)
