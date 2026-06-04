@@ -1,6 +1,7 @@
 name: "Algolia Crawler"
 description: "Start an Algolia Crawler Run. Works for Free All Accounts including DocSearch. Only requires the Crawler Credentials."
 author: "Shane"
+
 branding:
   icon: "play-circle"
   color: "blue"
