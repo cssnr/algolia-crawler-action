@@ -57,6 +57,7 @@ An alternative to this action is to use a simple [web-request-action](https://gi
 
 > [!WARNING]  
 > This action no longer works on the `master` branch.  
+> The `latest` tag is also being sunset very soon.  
 > If you need a rolling tag use the [@release](https://github.com/cssnr/algolia-crawler-action/tree/release) branch.
 
 ## Inputs

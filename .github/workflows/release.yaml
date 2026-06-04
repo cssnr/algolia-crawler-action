@@ -85,6 +85,7 @@ jobs:
         with:
           ref: refs/heads/${{ env.release }}
           tag: ${{ env.tag }}
+          tags: "latest"
           force: true
           release: true
 
