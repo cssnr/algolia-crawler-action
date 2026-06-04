@@ -20,6 +20,10 @@ on:
 env:
   crawler-id: "740ca24d-65fd-4f25-b397-16ebcec2f7fd" # django-files-docs
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     name: "Test"
@@ -34,18 +38,32 @@ jobs:
         if: ${{ !github.event.act }}
         continue-on-error: true
         run: cat "${GITHUB_EVENT_PATH}"
-
       - name: "Debug CTX github"
         if: ${{ !github.event.act }}
         continue-on-error: true
         env:
           GITHUB_CTX: ${{ toJSON(github) }}
         run: echo "$GITHUB_CTX"
-
       - name: "Debug Environment"
         if: ${{ !github.event.act }}
         continue-on-error: true
         run: env
+
+      - name: "Debug"
+        continue-on-error: true
+        run: |
+          ls -lah .
+
+      - name: "Setup Node"
+        if: ${{ !github.event.act }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: "Install & Build"
+        if: ${{ !github.event.act }}
+        run: |
+          npm ci
 
       - name: "Test Local Action"
         #if: ${{ env.crawler-id != '' }}
@@ -75,7 +93,7 @@ jobs:
 
       #- name: "Schedule Failure Notification"
       #  if: ${{ failure() && github.event_name == 'schedule' }}
-      #  uses: sarisia/actions-status-discord@b8381b25576cb341b2af39926ab42c5056cc44ed # v1.15.5
+      #  uses: sarisia/actions-status-discord@v1
       #  with:
       #    webhook: ${{ secrets.DISCORD_WEBHOOK }}
       #    description: ${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}
