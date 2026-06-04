@@ -1,6 +1,8 @@
+# https://www.schemastore.org/github-action.json
 name: "Algolia Crawler"
 description: "Start an Algolia Crawler Run. Works for Free All Accounts including DocSearch. Only requires the Crawler Credentials."
 author: "Shane"
+
 branding:
   icon: "play-circle"
   color: "blue"
@@ -20,7 +22,7 @@ outputs:
   status:
     description: "Response Status"
   task_id:
-    description: "Task ID"
+    description: "Algolia Crawler Task ID"
 
 runs:
   using: "node24"
