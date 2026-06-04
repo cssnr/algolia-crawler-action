@@ -1,3 +1,4 @@
+# https://www.schemastore.org/github-action.json
 name: "Algolia Crawler"
 description: "Start an Algolia Crawler Run. Works for Free All Accounts including DocSearch. Only requires the Crawler Credentials."
 author: "Shane"
