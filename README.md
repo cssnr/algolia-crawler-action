@@ -1,5 +1,5 @@
-[![GitHub Tag Major](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!v*.*&logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/tags)
-[![GitHub Tag Minor](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!v*.*.*&logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/releases)
+[![GitHub Tag Major](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!*.*&logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/tags)
+[![GitHub Tag Minor](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!*.*.*&logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/releases)
 [![GitHub Release Version](https://img.shields.io/github/v/release/cssnr/algolia-crawler-action?logo=git&logoColor=white&labelColor=585858&label=%20)](https://github.com/cssnr/algolia-crawler-action/releases/latest)
 [![GitHub Dist Size](https://img.shields.io/github/size/cssnr/algolia-crawler-action/dist%2Findex.js?branch=release&logo=bookstack&logoColor=white&label=dist)](https://github.com/cssnr/algolia-crawler-action/tree/release)
 [![Action Run Using](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcssnr%2Falgolia-crawler-action%2Frefs%2Fheads%2Fmaster%2Faction.yml&query=%24.runs.using&logo=githubactions&logoColor=white&label=runs)](https://github.com/cssnr/actionlint-action/blob/master/action.yml)
@@ -208,11 +208,11 @@ https://github.com/cssnr/algolia-crawler-action/network/dependents
 
 The following rolling [tags](https://github.com/cssnr/algolia-crawler-action/tags) are maintained.
 
-| Version&nbsp;Tag                                                                                                                                                                                                             | Rolling | Bugs | Feat. |   Name    |  Target  | Example  |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :--: | :---: | :-------: | :------: | :------- |
-| [![GitHub Tag Major](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!v*.*&style=for-the-badge&label=%20&color=44cc10)](https://github.com/cssnr/algolia-crawler-action/releases/latest) |   ✅    |  ✅  |  ✅   | **Major** | `vN.x.x` | `vN`     |
-| [![GitHub Tag Minor](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!v*.*.*&style=for-the-badge&label=%20&color=blue)](https://github.com/cssnr/algolia-crawler-action/releases/latest) |   ✅    |  ✅  |  ❌   | **Minor** | `vN.N.x` | `vN.N`   |
-| [![GitHub Release](https://img.shields.io/github/v/release/cssnr/algolia-crawler-action?style=for-the-badge&label=%20&color=red)](https://github.com/cssnr/algolia-crawler-action/releases/latest)                           |   ❌    |  ❌  |  ❌   | **Micro** | `vN.N.N` | `vN.N.N` |
+| Version&nbsp;Tag                                                                                                                                                                                                            | Rolling | Bugs | Feat. |   Name    |  Target  | Example  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :--: | :---: | :-------: | :------: | :------- |
+| [![GitHub Tag Major](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!*.*&style=for-the-badge&label=%20&color=44cc10)](https://github.com/cssnr/algolia-crawler-action/releases/latest) |   ✅    |  ✅  |  ✅   | **Major** | `vN.x.x` | `vN`     |
+| [![GitHub Tag Minor](https://img.shields.io/github/v/tag/cssnr/algolia-crawler-action?sort=semver&filter=!*.*.*&style=for-the-badge&label=%20&color=blue)](https://github.com/cssnr/algolia-crawler-action/releases/latest) |   ✅    |  ✅  |  ❌   | **Minor** | `vN.N.x` | `vN.N`   |
+| [![GitHub Release](https://img.shields.io/github/v/release/cssnr/algolia-crawler-action?style=for-the-badge&label=%20&color=red)](https://github.com/cssnr/algolia-crawler-action/releases/latest)                          |   ❌    |  ❌  |  ❌   | **Micro** | `vN.N.N` | `vN.N.N` |
 
 You can view the release notes for each version on the [releases](https://github.com/cssnr/algolia-crawler-action/releases) page.
 
@@ -308,11 +308,3 @@ Note: The `docker-test-action` builds, runs and pushes images to [GitHub Contain
 </details>
 
 For a full list of current projects visit: [https://cssnr.github.io/](https://cssnr.github.io/)
-
-<a href="https://github.com/cssnr/algolia-crawler-action">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=cssnr/algolia-crawler-action&type=date&legend=bottom-right&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=cssnr/algolia-crawler-action&type=date&legend=bottom-right" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=cssnr/algolia-crawler-action&type=date&legend=bottom-right" />
- </picture>
-</a>
